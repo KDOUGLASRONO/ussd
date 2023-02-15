@@ -39,7 +39,7 @@ app.get('/',(req,res)=>{
 app.post('/',(req,res)=>{
     try{
         console.log("success", req.body);
-        res.send("Success");
+        res.send("Post Success", req.body);
     }
     catch(err){
         console.log(err);
