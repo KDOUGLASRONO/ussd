@@ -40,7 +40,7 @@ app.get('/ussd',(req,res)=>{
     res.send("ussd: ");
 })
 
-app.post('/ussd',(req,res)=>{
+app.post('/',(req,res)=>{
     console.log(req.body);
 })
 
