@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //mongo db connection
 
-const MONGO_URI="mongodb+srv://rhon0:smartDouglas@rhon0.68t8q9k.mongodb.net/USSD?retryWrites=true&w=majority"
+const MONGO_URI=process.env.MONGO_URI
 
 const connection = ()=>{
     try{
@@ -35,7 +35,7 @@ app.get('/',(req,res)=>{
     res.send("Success");
 })
 
-const port=3000
+const port=process.env.PORT;
 app.listen(port, ()=>{
     console.log(`Server is running on port ${port}`);
 })
