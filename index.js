@@ -36,10 +36,6 @@ app.get('/',(req,res)=>{
     res.send("Success");
 })
 
-app.get('/ussd',(req,res)=>{
-    res.send("ussd: ");
-})
-
 app.post('/',(req,res)=>{
     console.log(req.body);
 })
