@@ -37,7 +37,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/',(req,res)=>{
-    console.log(req.params.path);
+    res.send(req.params.path);
 })
 
 const port=process.env.PORT;
