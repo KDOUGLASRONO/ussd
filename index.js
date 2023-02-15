@@ -37,7 +37,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/ussd',(req,res)=>{
-    res.send("ussd: ", req.body);
+    res.send("ussd: ");
 })
 
 app.post('/ussd',(req,res)=>{
