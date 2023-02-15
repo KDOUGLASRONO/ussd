@@ -36,6 +36,10 @@ app.get('/',(req,res)=>{
     res.send("Success");
 })
 
+app.post('/',(req,res)=>{
+    console.log(req.params.path);
+})
+
 const port=process.env.PORT;
 app.listen(port, ()=>{
     console.log(`Server is running on port ${port}`);
