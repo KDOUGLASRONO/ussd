@@ -37,7 +37,15 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/',(req,res)=>{
-    console.log(req.body);
+    try{
+        console.log("success", req.body);
+        res.send("Success");
+    }
+    catch(err){
+        console.log(err);
+        res.send(err);
+    }
+    
 })
 
 const port=process.env.PORT;
